@@ -1,0 +1,44 @@
+.titulo {
+	color: #774a85;
+	font-weight: normal;
+	font-family: Century Gothic;
+}
+h3{
+	color: #a537ab;
+	font-weight: normal;
+	font-family: Century Gothic;
+}
+
+p{
+	color: black;
+	font-weight: normal;
+	font-family: Book Antiqua;	
+}
+
+ul {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-rows: 50px;
+}
+li {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+#cabecera {
+	width: 600 px;
+	height: 100px;
+	background: #d3b9eb;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+}
+
+#cabecera>p{
+	font-weight: bold;
+	font-family: Baskerville;
+	letter-spacing: 2px;
+	font-size: 30px;
+	
+}
