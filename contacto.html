@@ -1,0 +1,92 @@
+<html>
+<head>
+<title> Formulario de contacto </title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<div id="cabecera">
+<p>Cáceres, mi ciudad natal</p>
+</div>
+<nav class="barra">
+  <ul>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tradiciones.html">Tradiciones</a></li>
+    <li><a href="datosEstadisticos.html">Datos estadísticos</a></li>
+	<li><a href="informacionTuristica.html">Información turística</a></li>
+	<li><a href="contenidoMultimedia.html">Contenido multimedia</a></li>
+	<li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+</head>
+
+<body>
+<form name="Cáceres" action="formulario.PHP" method="post" >
+ <fieldset class="formulario">
+
+<legend id="leyenda"> Datos generales</legend> 
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="name" name="nombre" size="50px" maxlength="20"><br/>
+        
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" size="50px" maxlength="30"><br/>
+        
+        <label for="dni">DNI</label><br>
+        <input type="text" id="dni" name="dni" size="50px" maxlength="10"><br/>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="emailaddress"><br>
+        
+        <label for="telefono">Teléfono de contacto</label><br>
+        <input type="text" id="telefono" name="telefono" maxlength="9"><br>
+</fieldset>
+
+<fieldset class="formulario2"> 
+<legend id="leyenda">  Interés sobre Cáceres </legend>
+
+<h3>Elija las atracciones turísticas que más le gusten</h3>
+        
+        <label for="cascoantiguo">Casco antiguo</label><br>
+          <input type="checkbox" id="cascoantiguo" name="cascoantiguo"/><br>
+        
+        <label for="semanasanta">Semana santa</label><br>
+          <input type="checkbox" id="semanasanta" name="semanasanta"/><br>
+        
+        <label for="womad">WOMAD</label><br>
+          <input type="checkbox" id="womad" name="womad"/><br>
+        
+        <label for="helga">Museo Helga de Alvear</label><br>
+          <input type="checkbox" id="helga" name="helga"/>
+
+<h3> Seleccione algo que quiera conocer de Cáceres </h3>
+        <label for="opciones">Elige tu interés</label><br>
+        <select id="opciones">
+              <option value="">Escoge tu interés</option>
+              <option value="gastronomia">Gastronomía</option>
+              <option value="ciudadmonumental">Ciudad Monumental</option>
+              <option value="fiestas">Fiestas</option>
+              <option value="fauna">Fauna</option>
+              <option value="flora">Flora</option>    
+        </select>
+
+<h3> ¿Vas a visitar Cáceres? </h3>
+        <label for="visita">Sí</label>
+        <input type="radio" name="si" id="si" value="1"> <br>
+        
+        <label for="visita">No</label>
+        <input type="radio"  name="no" id="no" value="0"><br>
+
+</fieldset>
+
+<br>
+<input type="reset" name="Limpiar" value="Borrar datos del formulario">
+<br> <br>
+
+<input type="submit" name="Enviar" value="Enviar formulario">
+</form>
+<br>
+
+</body>
+<div id="pie">
+<a href="index.html"> Volver al índice </a> <br>
+<a href="contacto.html"> Contacto </a> <br>
+<p>Todos los derechos reservados </p>
+</div>
+</html>
